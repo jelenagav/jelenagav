@@ -149,6 +149,7 @@ section:nth-child(2) #img {
 
 section:nth-child(2) .wrapper__txt {
   text-align: justify;
+  word-spacing:-2px;
 }
 
 .img-set {
@@ -175,7 +176,7 @@ section:nth-child(2) .wrapper__txt {
 .wrapper {
   display: flex;
   align-items: center;
-  text-align: center;
+/*  text-align: center;*/
   }
 
 section:nth-child(2) .wrapper__txt {
