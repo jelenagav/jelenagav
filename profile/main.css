@@ -28,83 +28,104 @@
 
   transition: all 10s ease!important;
   -webkit-transition: all 10s ease!important;
-  -o-transition:  all 10s ease!important;
-  -moz-transition: all 10s ease!important;
 }*/
+
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
-/*@media (min-width: 768px) {*/
 body {
-  padding: 3%;
-/*  background-color: #FFF;
-*/  /*-webkit-font-smoothing: antialiased;*/
-  }
-
-
-@media (max-width: 575.98px) {
-   body {
   padding: 0%;
+  background-color: #F4FAFA;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 576px) {
+   body {
+  padding: 2.5%;
   }
 }
+
+.container {
+  padding: 5px;
+  max-width: 93%;
+}
+
+@media (min-width: 992px) {
+  .container {
+  }
+}
+
 section {
   height: 100%;
-/*  margin: 0 0 3% 0;
-*/  position: relative;
-  background-color: #D4AF37;
-    transition: all 0.6s ease;
-  -webkit-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
+  position: relative;
 /*  background-color: #f8f9f9;
-*/  /*max-width: none;
-  */
+*/background-color: #F4FAFA;
 }
 
-@media (max-width: 575.98px) {
+/*CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK
+*/@media (max-width: 575.98px) {
    section {
   margin: 0;
   }
 }
 
-
-hr {
-  width: 7%;
+/*hr {
+  width: 13%;
+  border-top: 6px solid #d8e3e0;
   margin: 1.5% 0 1.5% 0;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 @media (max-width: 575.98px) {
-   hr {
-  width: 13%;
+  section:nth-child(2) hr {
+    width: 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
    hr {
-  width: 9%;
+  width: 0%;
   }
 }
 
-a, a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-    color: #2D2C2F;
+@media (min-width: 992px) {
+  hr {
+    width: 5%;
+  }
 }
+*/
 
-a:hover {
-  font-weight: 500;
-  color: #D4AF37!important;
+/*.underline {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: black;
+  text-underline-position: under;
+  text-decoration-skip-ink: none
+}*/
+
+
+a, a:link, a:active, a:visited {
+  color: #BDBA00;
+  text-decoration: none;
 }
 
 .row {
 padding-bottom: 8%;
 }
 
-.wrapper__txt {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  max-width: 90%;
+.wrapper--text {
+  padding: 0px;
 }
+
+@media (min-width: 768px) {
+  .wrapper--text {
+    padding: 15px;
+  }
+}
+  /*CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK */
 
 #section-1, #section-2, #section-3 {
   padding-top: 3%;
@@ -115,89 +136,84 @@ padding-bottom: 8%;
     padding: 5%;
   }
 }
-/*.transition { transition: all 0.2s, top 0s, left 0s, width 0s, height 0s; }
-*/
+
+* {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+
+[data-aos] {
+  body[data-aos-easing="new-easing"] &,
+  &[data-aos][data-aos-easing="new-easing"] {
+    transition-timing-function: cubic-bezier(.250, .250, .750, .750);
+  }
+}
 
 /* ==================================================
    Typography
 ================================================== */
-title {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 700;
-}
 
 h1 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 6em;
-/*  font-size: calc(2.8rem + (96 - 48) * ((100vw - 300px)/ (1200 - 300)));
-*/  font-weight: 500;
-  color: #2D2C2F;
-  -webkit-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-/*  color: #333;
-
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  letter-spacing:-1px;
+  color: #333;
+/*  text-shadow: -2px 1px rgba(0, 0, 0, 0.1);
 */}
-@media (max-width: 575.98px) {
-  h1 {
-  font-size: 4em;
-  }
+
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #BDBA00;
+  letter-spacing: 1.5px;
+  margin-left: -5px;
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  h1 {
-  font-size: 5.5em;
+@media (min-width: 576px) {
+  h2 {
+    font-size: 24px;
+    padding-left: 0px;
   }
 }
 
 @media (min-width: 768px) {
-  h1 {
-    font-size: 6em;
-  }
-}
-
-h2 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
-  color: #2D2C2F;
-  letter-spacing: 1px;
-}
-
-@media (max-width: 575.98px) {
   h2 {
-  font-size: 1.5em;
+    font-size: 28px;
   }
 }
+
 h3 {
-  font-family: 'Work Sans', sans-serif;
-  color: #2D2C2F;
-  transition: all 0.8s ease;
-  -webkit-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #434343;
 }
 
-@media (max-width: 575.98px) {
-  h3 {
-  font-size: 1.2em!important;
+@media (min-width: 768px) {
+  p {
+    font-size: 15px;
+    line-height: 1.5em;
   }
 }
 
 p {
   font-family: 'Work Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #2D2C2F;
-  line-height: 1.5em;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.3em;
+  color: #434343;
+  text-align: justify;
 }
 
-@media (max-width: 575.98px) {
+@media (min-width: 768px) {
   p {
-    font-size: 14px;
-    color: #2D2C2F;
-    line-height: 1.3em;
-    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5em;
   }
 }
 
@@ -205,13 +221,14 @@ p {
    Change Color
 ================================================== */
 
-section:nth-child(1) {
+/*section:nth-child(1) {
   background-color: #D4AF37;
-  transition: all 0.6s ease;
+
+  background-color: #f8f9f9;
   -webkit-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
+
 
 .changeColor {
    background: #f8f9f9!important;
@@ -230,16 +247,15 @@ section:nth-child(1) {
 
 hr {
   border-top: 6px solid #D4AF37;
-  transition: all 0.6s ease;
   -webkit-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+
 }
 
 section:nth-child(2) h2 {
-  color: #D4AF37;
-  transition: all 0.6s ease;
+/*  color: #D4AF37;
+  color: #2D2C2F;
   -webkit-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-}
+  transition: all 0.6s ease;
+}*/
+

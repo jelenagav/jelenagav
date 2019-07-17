@@ -1,6 +1,3 @@
-// $(document).ready(function() {
-//   AOS.init();
-// })
 
 /* ==================================================
    AOS
@@ -69,6 +66,9 @@ mainNavLinks.forEach(link => {
 /* ==================================================
   Colour change
 ================================================== */
+
+
+
 $(document).ready(function(){
     var scroll_pos = 0;
     $(document).scroll(function() {
@@ -86,21 +86,3 @@ $(document).ready(function(){
         }
     });
 });
-
-
-
-// $(document).ready(function(){
-//   let scroll_pos = 0;
-//   $(document).scroll(function() {
-//     scroll_pos = $(this).scrollTop();
-//     if(scroll_pos < 100) {
-//       $(".test").css('background-color', '#D4AF37');
-//       $("h3").css('color','white')
-//       $("h1").css('color','white')
-//     } else {
-//       $(".test").css('background-color', 'white');
-//       $("h3").css('color', 'black')
-//       $("h1").css('color','black')
-//     }
-//   });
-// });
