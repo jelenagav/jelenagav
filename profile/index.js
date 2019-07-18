@@ -25,15 +25,8 @@ let lastId;
 let cur = [];
 
 // This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
-
 // or event inst of paran
+
 window.addEventListener('scroll', () => {
   const fromTop = window.scrollY;
 
@@ -67,22 +60,20 @@ mainNavLinks.forEach(link => {
   Colour change
 ================================================== */
 
+// $(document).ready(function(){
+//     var scroll_pos = 0;
+//     $(document).scroll(function() {
+//         scroll_pos = $(this).scrollTop();
+//         if(scroll_pos > 250) {
+//             $("section").addClass("changeColor");
+//             $("section:nth-child(1) h2, section:nth-child(1) p").addClass("changeColortext");
+//             $("section:nth-child(2) h2").addClass("changeColortitle");
 
-
-$(document).ready(function(){
-    var scroll_pos = 0;
-    $(document).scroll(function() {
-        scroll_pos = $(this).scrollTop();
-        if(scroll_pos > 250) {
-            $("section").addClass("changeColor");
-            $("section:nth-child(1) h2, section:nth-child(1) p").addClass("changeColortext");
-            $("section:nth-child(2) h2").addClass("changeColortitle");
-
-        }
-        else {
-            $("section").removeClass("changeColor");
-            $("section:nth-child(1) h2, section:nth-child(1) p").removeClass("changeColortext");
-            $("section:nth-child(2) h2, hr").removeClass("changeColortitle");
-        }
-    });
-});
+//         }
+//         else {
+//             $("section").removeClass("changeColor");
+//             $("section:nth-child(1) h2, section:nth-child(1) p").removeClass("changeColortext");
+//             $("section:nth-child(2) h2, hr").removeClass("changeColortitle");
+//         }
+//     });
+// });
