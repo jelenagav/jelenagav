@@ -1,7 +1,4 @@
-
-/* ==================================================
-   AOS
-================================================== */
+// animate on scroll
 
 AOS.init({
   disable: 'mobile',
@@ -14,10 +11,7 @@ AOS.init({
 
 
 
-/* ==================================================
-   Navbar
-================================================== */
-
+// navbar
 let mainNavLinks = document.querySelectorAll("nav ul li a");
 let mainSections = document.querySelectorAll("main section");
 
@@ -41,10 +35,7 @@ window.addEventListener('scroll', () => {
   });
 });
 
-/* ==================================================
-  Smooth scrolling
-================================================== */
-
+// smooth scrolling
 mainNavLinks.forEach(link => {
   link.addEventListener('click', event => {
     event.preventDefault();
@@ -56,10 +47,7 @@ mainNavLinks.forEach(link => {
   });
 });
 
-/* ==================================================
-  Colour change
-================================================== */
-
+// change color s1
 // $(document).ready(function(){
 //     var scroll_pos = 0;
 //     $(document).scroll(function() {
