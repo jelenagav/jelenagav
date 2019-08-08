@@ -227,6 +227,7 @@ section:nth-child(1) h2 {
   font-size: 35px;
   font-weight: 600;
   color: #BDBA00;
+  letter-spacing: 2.5px;
   position: absolute;
   left: 0%;
   top: 0%;
