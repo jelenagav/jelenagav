@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500, 600, 700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
 
 <title> Jelena Gavrilovic </title>
 
@@ -22,114 +21,115 @@
 
 <body>
 
-  <section>
-    <div class="menu">
-      <a href="#about" class="link">
-        <div class="title"><p>About</p></div>
-        <div class="bar"></div>
+  <section class="header">
+    <div class="nav">
+      <a href="#about" class="nav__item">
+        <div class="nav__item__link">About</div>
+        <div class="nav__bar"></div>
       </a>
-      <a href="#work" class="link">
-        <div class="title"><p>Work</p></div>
-        <div class="bar"></div>
+      <a href="#work" class="nav__item">
+        <div class="nav__item__link">Work</div>
+        <div class="nav__bar"></div>
       </a>
-      <a href="#contact" class="link">
-        <div class="title"><p>Contact</p></div>
-        <div class="bar"></div>
+      <a href="#contact" class="nav__item">
+        <div class="nav__item__link">Contact</div>
+        <div class="nav__bar"></div>
       </a>
     </div>
     <div class="container">
-      <div class="box-header">
+      <div class="header__box">
       </div>
-      <div class="wrapper-main">
+      <div class="header__wrapper--heading">
         <h2> Hi there  </h2>
         <h1>my name<br>is Jelena </h1>
       </div>
-      <div class="wrapper-sub">
-
-        <h3>I'm a full-stack developer focused on making things that make a difference         <hr class="border-sub">
-</h3>
+      <div class="header__wrapper--sub">
+        <h3>I'm a full-stack developer focused on making things that make a difference<hr><hr></h3>
       </div>
   </section>
 
-  <section id="about">
+  <section class="intro" id="about">
     <div class="container">
       <h2> About me</h2>
       <div class="row align-items-center">
-        <div class="wrapper col-12 col-sm-6">
-          <div class="wrapper--text">
-            <p> My name is Jelena Gavrilovic—a full-stack developer with a background in, and passion for, inclusive business and sustainable development, currently based in Amsterdam. </br></br> I took my first steps into the tech world by participating in the Le Wagon coding bootcamp, where I developed my first web applications. I have since gained experience in Ruby, Ruby on Rails, HTML, CSS, Javascript, REST and SQL. Prior to this, I have been working in the field of international development, of which the last 2.5 years in Cambodia. </br> </br>Currently, I am learning Python and working to expand my knowledge on JavaScript. I am available for full-time positions and projects and would love to hear about any roles or jobs you may have. I am open to relocation, remote work and new technology stacks!
-            </p>
-          </div>
+        <div class="intro__text col-12 col-sm-6">
+          <p> My name is Jelena Gavrilovic—a full-stack developer with a background in, and passion for, inclusive business and sustainable development, currently based in Amsterdam. </br></br> I took my first steps into the tech world by participating in the Le Wagon coding bootcamp, where I developed my first web applications. I have since gained experience in Ruby, Ruby on Rails, HTML, CSS, Javascript, REST and SQL. Prior to this, I have been working in the field of international development, of which the last 2.5 years in Cambodia. </br> </br>Currently, I am learning Python and working to expand my knowledge on JavaScript. I am available for full-time positions and projects and would love to hear about any roles or jobs you may have. I am open to relocation, remote work and new technology stacks!
+          </p>
         </div>
-        <div class="col col-12 col-sm-6" data-aos="fade-left" data-aos-duration="1600" data-aos-easing="ease-out-back" data-aos-delay="500">
-          <img class="img-set" src="images/profile4.png"  alt="Profile picture">
+        <div class="intro__img col-12 col-sm" data-aos="fadeInRight" data-aos-duration="1600" data-aos-easing="ease-out-back" data-aos-delay="500">
+          <img src="images/profile4.png"  alt="Profile picture">
         </div>
       </div>
     </div>
   </section>
 
-  <section id="work">
+  <section class="portfolio" id="work">
     <div class="container">
       <h2> Projects </h2>
-      <div class="wrapper--text">
+      <div class="portfolio__intro-text">
        <p> Here are a couple of projects on which I have worked, more works and projects to come soon. </br> In the mean time, you can check out my <a href="https://github.com/jelenagav"> GitHub </a> for more work. </p>
-     </div>
-     <div class="row" data-aos="fade-up">
-      <div class="col">
-        <div class="wrapper-text-card wrapper-text-card--left">
-          <h3> Bookable </h3>
-          <p> A two sided market place for book swapping made with Ruby on Rails, HTML/CSS and JavaScript. </p>
+      </div>
+      <div class="portfolio__card row" data-aos="fadeDown" data-aos-duration="700">
+        <div class="col">
+          <div class="portfolio__card__text portfolio__card__text--left">
+            <h3> Bookable </h3>
+            <p> A two sided market place for book swapping made with Ruby on Rails, HTML/CSS and JavaScript. </p>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+          <div class="portfolio__card__thumb portfolio__card__thumb--right" >
+            <div class="portfolio__card__thumb__img portfolio__card__thumb__img--colour">
+              <a href="https://rails-bookable.herokuapp.com/" target="_blank"><img class="img-fluid" img src="images/bookable.png" alt="Bookable"> </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
-        <div class="wrapper-thumb wrapper-thumb--right" >
-          <div class="thumb thumb--colour">
-            <a href="https://rails-bookable.herokuapp.com/" target="_blank"><img class="img-fluid" img src="images/bookable.png" alt="Bookable" class="img-fluid"> </a>
+      <div class="portfolio__card row"  data-aos="fadeDown" data-aos-duration="700">
+                  <div class="portfolio__card__text--xs-visible">
+            <h3> Unclogd </h3>
+            <p> A skin care finder web application made with Ruby on Rails, HTML/(S)CSS and JavaScript. </p>
+          </div>
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+          <div class="portfolio__card__thumb portfolio__card__thumb--left">
+            <div class="portfolio__card__thumb__img portfolio__card__thumb__img--dark">
+              <a href="http://www.unclogd.com/" target="_blank"><img class="img-fluid" img src="images/unclogd.png" alt="Unclogd"> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="portfolio__card__text portfolio__card__text--right portfolio__card__text--xs-hidden">
+            <h3> Unclogd </h3>
+            <p> A skin care finder web application made with Ruby on Rails, HTML/(S)CSS and JavaScript. </p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__card row" data-aos="fadeDown" data-aos-duration="700">
+        <div class="col">
+          <div class="portfolio__card__text portfolio__card__text--left">
+            <h3> SoGood </h3>
+            <p> A landing page for the prototype of a social and sustainable startup - an e-commerce platform made with HTML/CSS and JavaScript. </p>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+          <div class="portfolio__card__thumb portfolio__card__thumb--right">
+            <div class="portfolio__card__thumb__img portfolio__card__thumb__img--colour">
+              <a href="https://sogood.surge.sh/" target="_blank"><img class="img-fluid" img src="images/sogood.png" alt="SoGood" class="img-fluid"> </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row"  data-aos="fade-up">
-      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
-        <div class="wrapper-thumb wrapper-thumb--left">
-          <div class="thumb thumb--dark">
-            <a href="http://www.unclogd.com/" target="_blank"><img class="mg-fluid" img src="images/unclogd.png" alt="Unclogd" class="img-fluid"> </a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="wrapper-text-card wrapper-text-card--right">
-          <h3> Unclogd </h3>
-          <p> A skin care finder web application made with Ruby on Rails, HTML/(S)CSS and JavaScript. </p>
-        </div>
-      </div>
-    </div>
-    <div class="row" data-aos="fade-up">
-      <div class="col">
-        <div class="wrapper-text-card wrapper-text-card--left">
-          <h3> SoGood </h3>
-          <p> A landing page for the prototype of a social and sustainable startup - an e-commerce platform made with HTML/CSS and JavaScript. </p>
-        </div>
-      </div>
-      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
-        <div class="wrapper-thumb wrapper-thumb--right">
-          <div class="thumb thumb--colour">
-            <a href="https://sogood.surge.sh/" target="_blank"><img class="img-fluid" img src="images/sogood.png" alt="SoGood" class="img-fluid"> </a>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
+  </section>
 
-<section id="contact">
+<section class="contact" id="contact">
   <div class="container">
     <h2> Let's connect </h2>
-    <div class="wrapper--text">
+    <div class="contact__text">
       <p> Want to explore possibilities to work together or just say hi? You are always very welcome to e-mail me at <a href="mailto:gavrilovicjelena@outlook.com" class="a"> gavrilovicjelena@outlook.com. </a></br></br><b> I'd love to hear from you! </b></p>
     </div>
-    <ul class="link--contact list-unstyled list-inline social text-center">
-      <li class="link--contact list-inline-item"><a href="www.linkedin.com/in/jelena-gavrilovic-660b3913a"><i class="fab fa-linkedin-in"></i></a></li>
-      <li class="link--contact list-inline-item"><a href="https://github.com/jelenagav"><i class="fab fa-github"></i></a></li>
+    <ul class="footer list-unstyled list-inline social text-center">
+      <li class="list-inline-item"><a href="www.linkedin.com/in/jelena-gavrilovic-660b3913a"><i class="fab fa-linkedin-in"></i></a></li>
+      <li class="list-inline-item"><a href="https://github.com/jelenagav"><i class="fab fa-github"></i></a></li>
       <li class="list-inline-item"><a href="mailto:gavrilovicjelena@outlook.com"><i class="fas fa-envelope"></i></a></li>
     </ul>
   </div>
