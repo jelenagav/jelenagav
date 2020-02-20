@@ -7,12 +7,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
   <link rel="shortcut icon" type="image/x-icon" image href="images/icon.ico" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500, 600, 700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
 
 <title> Jelena Gavrilovic </title>
@@ -20,40 +20,42 @@
 </head>
 
 <body>
-
-  <section class="header">
+<!-- header -->
+  <header>
     <div class="nav">
+      <div class="nav__logo">
+        <p> Jelena.</p>
+      </div>
       <a href="#about" class="nav__item">
-        <div class="nav__item__link">About</div>
-        <div class="nav__bar"></div>
+        <div class="nav__link">About</div>
       </a>
       <a href="#work" class="nav__item">
-        <div class="nav__item__link">Work</div>
-        <div class="nav__bar"></div>
+        <div class="nav__link">Work</div>
       </a>
       <a href="#contact" class="nav__item">
-        <div class="nav__item__link">Contact</div>
-        <div class="nav__bar"></div>
+        <div class="nav__link">Contact</div>
       </a>
     </div>
-    <div class="container">
-      <div class="header__box">
-      </div>
-      <div class="header__wrapper--heading">
-        <h2> Hi there  </h2>
-        <h1>my name<br>is Jelena </h1>
-      </div>
-      <div class="header__wrapper--sub">
-        <h3>I'm a full-stack developer focused on making things that make a difference<hr><hr></h3>
-      </div>
-  </section>
-
+    <div class="heading">
+        <h1>
+          <span class="heading__green">I'm </span><span>Jelena</span><span class="heading__blue">.</span>
+        </h1>
+        <h2>
+          I'm a full-stack developer, focused on making things that make a difference
+        </h2>
+    </div>
+  </header>
+<!-- Section 1 -->
   <section class="intro" id="about">
     <div class="container">
-      <h2> About me</h2>
+      <h3> <span class="heading__blue"> About</span></br> me.</h3>
       <div class="row align-items-center">
         <div class="intro__text col-12 col-sm-6">
-          <p> My name is Jelena Gavrilovic—a full-stack developer with a background in, and passion for, inclusive business and sustainable development, currently based in Amsterdam. </br></br> I took my first steps into the tech world by participating in the Le Wagon coding bootcamp, where I developed my first web applications. I have since gained experience in Ruby, Ruby on Rails, HTML, CSS, Javascript, REST and SQL. Prior to this, I have been working in the field of international development, of which the last 2.5 years in Cambodia. </br> </br>Currently, I am learning Python and working to expand my knowledge on JavaScript. I am available for full-time positions and projects and would love to hear about any roles or jobs you may have. I am open to relocation, remote work and new technology stacks!
+          <h4>
+            My name is Jelena Gavrilovic—a full-stack developer with a background in, and passion for, inclusive business and sustainable development, currently based in Amsterdam.</br></br>
+          </h4>
+          <p>
+            I took my first steps into the tech world by participating in the Le Wagon coding bootcamp, where I developed my first web applications. I have since gained experience in Ruby, Ruby on Rails, HTML, CSS, Javascript, REST and SQL. Prior to this, I have been working in the field of international development, of which the last 2.5 years in Cambodia. </br></br> I enjoy crafting digital experiences through design and code. Currently, I am learning Python and getting into data visualization.
           </p>
         </div>
         <div class="intro__img col-12 col-sm" data-aos="fadeInRight" data-aos-duration="1600" data-aos-easing="ease-out-back" data-aos-delay="500">
@@ -62,10 +64,10 @@
       </div>
     </div>
   </section>
-
+<!-- Section 2 -->
   <section class="portfolio" id="work">
     <div class="container">
-      <h2> Projects </h2>
+      <h3> Projects </h3>
       <div class="portfolio__intro-text">
        <p> Here are a couple of projects on which I have worked, more works and projects to come soon. </br> In the mean time, you can check out my <a href="https://github.com/jelenagav"> GitHub </a> for more work. </p>
       </div>
@@ -120,10 +122,10 @@
       </div>
     </div>
   </section>
-
+<!-- Section 3 -->
 <section class="contact" id="contact">
   <div class="container">
-    <h2> Let's connect </h2>
+    <h3> Let's connect </h3>
     <div class="contact__text">
       <p> Want to explore possibilities to work together or just say hi? You are always very welcome to e-mail me at <a href="mailto:gavrilovicjelena@outlook.com" class="a"> gavrilovicjelena@outlook.com. </a> I'd love to hear from you! </p>
     </div>

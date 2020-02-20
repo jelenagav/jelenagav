@@ -8,10 +8,14 @@ html {
   height: 100%;
 }
 
+@charset "charset";
+
 body {
   padding: 0 10px;
+  font-size: 16px;
   background-color: #f7fcfc;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   height: 100%;
 }
 
@@ -39,13 +43,6 @@ padding-bottom: 8%;
 .wrapper--text, .main__text, .portfolio__intro-text, .contact__text {
   padding: 0px;
 }
-
-@media (min-width: 768px) {
-  .wrapper--text, .main__text, .portfolio__intro-text, .contact__text {
-    padding: 15px;
-  }
-}
-  /*CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK CHECK */
 
 #section-1, #section-2, #section-3 {
   padding-top: 3%;
@@ -77,67 +74,62 @@ padding-bottom: 8%;
 ================================================== */
 
 h1 {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  letter-spacing:-1px;
+  font-family: "space_groteskbold";
+  font-size: 3.10rem;
+  line-height: 1.1;
+  letter-spacing:0.05rem;
   color: #333;
-/*  text-shadow: -2px 1px rgba(0, 0, 0, 0.1);
-*/}
+}
 
 
 h2 {
-  font-family: "Rubik", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  color: #BDBA00;
-  letter-spacing: 1.5px;
-  margin-left: -5px;
+  font-family: "space_groteskmedium";
+  font-size: 1rem;
+  color: #282929;
 }
 
 h3 {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  font-family: 'space_groteskbold';
   color: #434343;
 }
 
+h4 {
+  font-family: 'space_groteskmedium';
+  font-size: 18px;
+  line-height: 1.6em;
+  color: #282929;
+}
 
 p {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.3em;
-  color: #434343;
-  text-align: justify;
-}
-
-@media (min-width: 576px) {
-  h2 {
-    font-size: 23px;
-    padding-left: 0px;
-  }
+  font-family: 'space_groteskregular';
+  font-size: 0.95rem;
+  line-height: 1.6em;
+  color: #282929;
 }
 
 @media (min-width: 768px) {
+  h1 {
+    font-size: 7rem;
+  }
+
   h2 {
-    font-size: 31px;
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2.6rem;
   }
 
   p {
-    font-size: 16px;
-    line-height: 1.5em;
+    font-size: 1rem;
   }
 }
 
-@media (min-width: 1200px) {
-  h2 {
-    font-size: 38px;
-  }
-}
-
-a, a:link, a:active, a:visited {
+/*a, a:link, a:active, a:visited {
   color: #BDBA00;
   text-decoration: none;
-}
+  font-weight: 400;
+}*/
 /* ==================================================
    Animations
 ================================================== */
