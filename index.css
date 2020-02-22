@@ -184,6 +184,13 @@ header {
 /* ==================================================
    Section 3
 ================================================== */
+.portfolio {
+  z-index: -2;
+}
+
+.col-lg-7, .col-md-7, .col-sm-7 {
+  z-index: -1;
+}
 
 .portfolio .row {
   padding-bottom: 15px;
@@ -199,6 +206,7 @@ header {
   font-weight: 300;
   line-height: 1.4;
   text-align: left;
+  background-color: white;
 }
 
 .c-card h3 {
@@ -226,7 +234,9 @@ header {
 
 .c-card__link {
   width: 100%;
+  position: relative;
   height: auto;
+  background: #ECF0EE;
   text-align: center;
   -webkit-transition: all 0.8s ease;
   -o-transition: all 0.8s ease;
@@ -234,66 +244,10 @@ header {
 
 .c-card__link--right {
   float: right;
-  position: relative;
-  background: #ECF0EE;
-  z-index: 1;
 }
 
-.c-card__link--right:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 80%;
-  bottom: 0;
-  left: 0;
-  background: #F4FAFA;
-  -webkit-transition: all 0.8s linear;
-  -o-transition: all 0.8s linear;
-}
-
-.c-card__link--right:hover {
-  -webkit-transition: all 0.8s linear;
-  -o-transition: all 0.8s linear;
-}
-
-.c-card__link--right:hover:before {
-  right: 90%;
-  -webkit-transition: all 0.8s linear;
-  -o-transition: all 0.8s linear;
-}
-
-.c-card__link--right img {
-  display: inline-block;
-  padding: 0;
-  -webkit-transition: all 0.7s ease;
-  -o-transition: all 0.7s ease;
-  padding: 0;
-}
 .c-card__link--left {
   float: left;
-  position: relative;
-  z-index: 2;
-  background: #F4FAFA;
-}
-
-.c-card__link--left:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 30%;
-  bottom: 0;
-  left: 0;
-  background: #ECF0EE;
-  -webkit-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-}
-
-.c-card__link--left:hover:before {
-  right: 20%;
-  -webkit-transition: all 0.7s linear;
-  -o-transition: all 0.7s linear;
 }
 
 
@@ -345,12 +299,8 @@ header {
 }
 
 @media (min-width: 768px) {
-  .c-card__link--right img {
-    padding: 13% 13% 13% 0;
-  }
-
-  .c-card__link--left img {
-  padding: 13% 0 13% 13%;
+  .c-card__link img {
+    padding: 13% 16%;
   }
 
   .c-card p {
@@ -359,7 +309,12 @@ header {
 }
 
 @media (min-width: 992px) {
-
+  .c-card p {
+    z-index: 1;
+    margin-right: -40%;
+    margin-left: 10%;
+    padding: 50px;
+  }
   .c-card h3 {
     font-size: 1.9rem;
   }
@@ -373,22 +328,6 @@ header {
 }
 
 @media (min-width: 1200px) {
-  .c-card__link--right:before {
-    right: 47%;
-  }
-
-  .c-card__link--right:hover:before {
-    right: 54%;
-  }
-
-  .c-card__link--left:before {
-  right: 53%;
-  }
-
-  .c-card__link--left:hover:before {
-    right: 46%;
-  }
-
     .c-card__link img {
     width: 90%;
   }
