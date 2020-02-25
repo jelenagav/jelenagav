@@ -75,11 +75,11 @@ header {
     white-space: nowrap;
     overflow: hidden;
 }
-.span__green {
+.span--green {
   color: #37BB78;
 }
 
-.span__blue {
+.span--blue {
   color: #3C97F6;
   margin-left: 1px;
 }
@@ -188,10 +188,16 @@ header {
   z-index: -2;
 }
 
+.portfolio h3 {
+}
+
 .col-lg-7, .col-md-7, .col-sm-7 {
   z-index: -1;
 }
 
+.col, .col-sm-4 {
+  z-index: 2;
+}
 .portfolio .row {
   padding-bottom: 15px;
 }
@@ -206,7 +212,7 @@ header {
   font-weight: 300;
   line-height: 1.4;
   text-align: left;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .c-card h3 {
@@ -220,11 +226,6 @@ header {
 
 .xs-hidden {
   display: none;
-}
-
-.c-card__text--left {
-  padding-left:2%;
-  padding-bottom: 2%;
 }
 
 .c-card__text--right {
@@ -250,29 +251,36 @@ header {
   float: left;
 }
 
-
-@media (min-width: 576px) and (max-width: 991.98px) {
-  .c-card__text--left {
-    padding: 0 0 5% 0;
+@media (min-width: 768px) {
+  .c-card {
+    padding: 15% 0%;
+  }
+  .c-card:first-child {
+    padding: 5% 0% 15% 0%!important;
   }
 
-  .c-card__text--right {
-    padding: 0 5% 0 0;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
   .c-card h3 {
     font-size: 1.7rem;
+    padding-bottom: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .c-card__text {
+    background-color: white;
   }
 
   .c-card__text--left {
-    padding: 0 0 20% 0;
+    margin-right: -24%;
+    margin-left: 15%;
+    padding: 10% 6% 10% 0%;
   }
 
   .c-card__text--right {
-    padding: 0 20% 0 0;
+    margin-left: -24%;
+    margin-right: 19%;
+    padding: 10% 0% 10% 6%;
   }
+
 }
 
 @media (min-width: 576px) {
@@ -285,45 +293,57 @@ header {
   }
 
   .c-card__link {
-    width: 90%;
+    width: 100%;
     height: auto;
     text-align: center;
-    margin-bottom: 20px;
+    padding: 8% 16%;
   }
 
   .c-card__link:hover img {
-  -webkit-transition: all 0.7s ease;
+/*  -webkit-transition: all 0.7s ease;
   -o-transition: all 0.7s ease;
-  transform: scale(1.04);
+  transform: scale(1.04);*/
   }
 }
 
 @media (min-width: 768px) {
-  .c-card__link img {
-    padding: 13% 16%;
+  .portfolio h3 {
+    padding-bottom: 1rem;
   }
+
+  .c-card__link img {
+    -webkit-box-shadow: 10px 10px 5px -2px rgba(189,203,196,1);
+    -moz-box-shadow: 10px 10px 5px -2px rgba(189,203,196,1);
+    box-shadow: 10px 10px 5px -2px rgba(189,203,196,1);
+    transition: 1s ease;
+
+ }
+
+   .c-card__link:hover img {
+    -webkit-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    transform: scale(0.98);
+    transition: 1s ease;
+ }
 
   .c-card p {
   font-size: 1rem;
+  margin-bottom: 0px;
+  }
+
+  a:hover {
+  font-family: space_groteskbold;
+  transition: 1s ease;
   }
 }
 
 @media (min-width: 992px) {
   .c-card p {
-    z-index: 1;
-    margin-right: -40%;
-    margin-left: 10%;
-    padding: 50px;
   }
   .c-card h3 {
     font-size: 1.9rem;
-  }
-  .c-card__text--left {
-    padding-left: 25%;
-  }
-
-  .c-card__text--right {
-    padding-right: 25%;
+    padding-bottom: 16px;
+    color: #37BB78;
   }
 }
 
@@ -337,19 +357,20 @@ header {
 /* ==================================================
    Section 4 & Footer
 ================================================== */
-.contact a {
-  display: inline-block;
-}
-
-.contact ul {
-  font-size: 1.3em;
-  letter-spacing: 5px;
-  padding-top: 4%;
-}
 
 .contact p {
   text-align: left;
   word-spacing: 2px;
+}
+
+footer a {
+  display: inline-block;
+}
+
+footer ul {
+  font-size: 1.3em;
+  letter-spacing: 5px;
+  padding-top: 4%;
 }
 
 .footer a {
@@ -363,6 +384,39 @@ header {
   -webkit-transition: all 0.3s ease!important;
   -o-transition: all 0.3s ease!important;
 }
+
+@media (min-width: 768px) {
+  .contact {
+   padding: 15% 0% 5% 0%;
+  }
+
+  .contact__item .row{
+    padding: 11% 0%;
+  }
+
+  .contact__item {
+    background-color: #3482D3;
+    max-width: 100%!important;
+    padding: 0%!important;
+    margin-left: 13%;
+  }
+
+  .contact__text p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding-right: 6%;
+    padding-left: 5%;
+  }
+
+  .contact__item h3 {
+   color: #ffffff;
+  }
+
+  .contact__text a {
+    color: #ffffff;
+  }
+}
+
 
 /*footer .wrapper {
   padding: 20px 15px 0 15px;
