@@ -49,6 +49,19 @@ padding-bottom: 8%;
   padding-top: 3%;
 }
 
+.span--green {
+/*  color: #38B376;
+*/  color: #D6D200;
+}
+
+.span--blue {
+  color: #227EDE;
+  margin-left: 1px;
+}
+
+.span--bold {
+  font-family: "space_groteskmedium"!important;
+}
 @media (max-width: 575.98px) {
   .row {
     padding: 5%;
@@ -164,6 +177,137 @@ p {
   }
 }
 
+@media (min-width: 768px) {
+  /*initial state animation
+  */[data-aos="fadeDown"] {
+      transform: translateY(30px);
+      transition-property: transform;
+  }
+
+  /*final stage animation
+  */[data-aos="fadeDown"].aos-animate {
+      transform: translateY(0px);
+  }
+
+    [data-aos="fadeInRight"] {
+      transform: translateX(50px);
+      transition-property: transform;
+  }
+
+    [data-aos="fadeInRight"].aos-animate {
+      transform: translateX(0px);
+  }
+
+
+    [data-aos="test"] {
+    opacity: 0;
+    width: 0%;
+/*    height: 100px;
+*/  }
+
+    [data-aos="test"].aos-animate {
+    opacity: 1;
+    width: 100%;
+  }
+
+      [data-aos="testtwo"] {
+    opacity: 0;
+    display: none;
+    color: #3482D3;
+  }
+
+    [data-aos="testtwo"].aos-animate {
+    opacity: 1;
+    display: inline-block!important;
+    color: #ffffff;
+  }
+}
+
+/*@keyframes test {
+  0% {
+    opacity: 0;
+    width: 0%;
+    height: 10%;
+    padding: 0;}
+  100% {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    padding: 11% 0%;
+  }
+}
+
+@keyframes testtwo {
+  0% {
+    opacity: 0;
+    display: none;
+    color: #3482D3;
+  }
+
+  50%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    display: inline-block!important;
+    color: #ffffff;
+  }
+}*/
+
+@keyframes ZoomOut {
+  0%{
+    -webkit-transform:scale(2);
+    -ms-transform:scale(2);
+    transform:scale(2);
+  }
+
+  100% {
+    -webkit-transform:scale(1);
+    -ms-transform:scale(1);
+    transform:scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+ @keyframes revealText {
+   from {
+/*     opacity: 0;
+*/     -webkit-transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+     -ms-transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+     transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+  }
+   to {
+/*     opacity: 1;
+*/     -webkit-transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
+     -ms-transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
+     transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+@keyframes NavAppear {
+   from {
+     opacity: 0;
+     -ms-transform: translate(0%, -80px) matrix(1, 0, 0, 1, 0, 0);
+     -webkit-transform: translate(0%, -80px) matrix(1, 0, 0, 1, 0, 0);
+     transform: translate(0%, -80px) matrix(1, 0, 0, 1, 0, 0);
+  }
+   to {
+     opacity: 1;
+     -ms-transform: translate(0%, 0px) matrix(1, 0, 0, 1, 0, 0);
+     -webkit-transform: translate(0%, 0px) matrix(1, 0, 0, 1, 0, 0);
+     transform: translate(0%, 0px) matrix(1, 0, 0, 1, 0, 0);
+    }
+}
 
 @-webkit-keyframes expand {
   0% {
@@ -204,7 +348,7 @@ p {
     transform: translateY(0%);
   }
 }
-@keyframes slideUp {
+/*@keyframes slideUp {
   0% {
     opacity: 0;
     -webkit-transform-origin: 0 0;
@@ -220,7 +364,7 @@ p {
     -webkit-transform: translateY(0%);
     transform: translateY(0%);
   }
-}
+}*/
 @-webkit-keyframes fadeIn {
  0% {
     opacity: 0;
