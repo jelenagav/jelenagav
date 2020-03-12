@@ -208,7 +208,7 @@ header {
   }
 
   .intro__text h4 {
-   font-size: 1rem;
+   font-size: 1.1rem;
   }
 
   .intro__img > img {
@@ -228,9 +228,9 @@ header {
     margin: auto;
     letter-spacing: 2px;
     line-height: 1.1;
-    padding: 0% 0 12% 0%;
+    padding: 0% 0 11% 0%;
     /* margin: 37px!important; */
-    margin-top: -8rem!important;
+    margin-top: -12rem!important;
   }
   .intro__text {
     max-width: 80%;
@@ -239,7 +239,8 @@ header {
   .intro__text > p, .intro__text > h3, .intro__text > h4 {
     max-width: 88%;
     margin: auto;
-  }
+/*    animation: fadeIn 0.3s linear 1.4s both;
+*/  }
 
     .intro__img > img {
     padding: 15px;
@@ -507,29 +508,26 @@ footer ul {
   padding: 0%!important;
 }
 
-
 .contact__text p {
   color: #ffffff;
   font-size: 1.1rem;
   padding-right: 0%;
   padding-left: 0%;
+  padding-top: 5%;
   margin-left: auto;
   margin-right: auto;
-/*  opacity: 0;
-*/  max-width: 77%;
-/*  animation: testtwo 1s ease-in 3s both;
-*/}
+  max-width: 77%;
+}
 
 .contact__item h3 {
-/*  opacity: 0;
-*/  color: #ffffff;
+  color: #ffffff;
   padding-left: 0rem;
+  padding-bottom: 0%;
   margin-left: auto;
-  padding-bottom: 5%;
   margin-right: auto;
+  margin-bottom: -0.5%;
   max-width: 81%;
-/*  animation: testtwo 1s ease-in 3s both;
-*/}
+}
 
 .contact__text a {
   color: #ffffff;
@@ -542,21 +540,23 @@ footer ul {
 }
 
 @media (min-width: 768px) {
+
+  .contact__item--title {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+  .contact__item h3 {
+    color: #ffffff;
+    padding-left: 1.8rem;
+    margin: -5px auto -5px 0;
+  }
+
   .contact__text p {
     color: #ffffff;
     font-size: 1.1rem;
-    padding-right: 0%;
-    padding-left: 0%;
-    margin-left: 3%;
-    margin-right: 5%;
+    padding: 0%;
+    margin: 0% 5% 0% 3%;
     max-width: 88%;
-  }
-
-  .contact__item h3 {
-   color: #ffffff;
-   padding-left: 1.8rem;
-   margin-left: 0%;
-   margin-right: auto;
   }
 }
 
@@ -571,7 +571,7 @@ footer ul {
   }
 
   .contact__item .row{
-    padding: 11% 0%;
+    padding: 4% 0%;
   }
 
   .contact__item {
