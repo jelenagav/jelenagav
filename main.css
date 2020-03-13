@@ -160,36 +160,25 @@ p {
 ================================================== */
 
 @media (min-width: 768px) {
-  /*initial state animation
-  */[data-aos="fadeDown"] {
-      transform: translateY(30px);
-      transition-property: transform;
-  }
-
-  /*final stage animation
-  */[data-aos="fadeDown"].aos-animate {
+    [data-aos="fadeUp"].aos-animate {
       transform: translateY(0px);
   }
 
-    [data-aos="fadeInRight"] {
-      transform: translateX(50px);
-      transition-property: transform;
-  }
-
-    [data-aos="fadeInRight"].aos-animate {
-      transform: translateX(0px);
-  }
-}
-
-@media (min-width: 768px) {
-  /*initial state animation
-  */[data-aos="fadeDown"] {
+   [data-aos="fadeUp"] {
       transform: translateY(30px);
       transition-property: transform;
   }
 
-  /*final stage animation
-  */[data-aos="fadeDown"].aos-animate {
+    [data-aos="moveUp"].aos-animate {
+      transform: translateY(0px);
+  }
+
+   [data-aos="moveUp"] {
+      transform: translateY(30px);
+      transition-property: transform;
+  }
+
+    [data-aos="fadeUp"].aos-animate {
       transform: translateY(0px);
   }
 
@@ -203,21 +192,55 @@ p {
   }
 }
 @media (min-width: 992px) {
+   [data-aos="fadeUp"] {
+      transform: translateY(60px);
+      transition-property: transform;
+  }
 
-    [data-aos="expand"] {
-     margin-left: 50%;
+    [data-aos="fadeUp"].aos-animate {
+      transform: translateY(0px);
+  }
+
+    [data-aos="moveUp"].aos-animate {
+      transform: translateY(0px);
+  }
+
+   [data-aos="moveUp"] {
+      transform: translateY(30px);
+      transition-property: transform;
+  }
+/*   [data-aos="expand"] {
+     margin-left: 0%;
+     margin-right: 20%;
      opacity: 0;
-/*    height: 100px;
-*/  }
+   }
+
+    [data-aos="expand"].aos-animate {
+        margin-left: 13%;
+        margin-right: 0%;
+        opacity: 1;*/
+  }
+    [data-aos="expand"] {
+     margin-left: 0%;
+     opacity: 0;
+   }
 
     [data-aos="expand"].aos-animate {
         margin-left: 13%;
         opacity: 1;
   }
+
+   [data-aos="expandtest"] {
+     margin-right: 13%;
+   }
+
+    [data-aos="expandtest"].aos-animate {
+        margin-right: 0%;
+  }
+
     [data-aos="testthree"] {
-    padding: 0% 0%;
-/*    height: 100px;
-*/  }
+    padding: 9% 0%;
+     }
 
     [data-aos="testthree"].aos-animate {
     padding: 10% 0%;
