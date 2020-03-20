@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'Space_Grotesk';
   font-weight: bold;
-  src: url("./fonts/SpaceGrotesk-B.otf") format("opentype"),
-       url("./fonts/SpaceGrotesk-B.woff") format('woff');
+  src: url("/fonts/SpaceGrotesk-B.otf") format("opentype"),
+       url("/fonts/SpaceGrotesk-B.woff") format('woff');
 }
 
 @font-face {
     font-family: 'space_grotesklight';
-    src: url('./fonts/spacegrotesk-light-webfont.otf') format('opentype'),
-         url('./fonts/spacegrotesk-light-webfont.woff') format('woff');
+    src: url('/fonts/spacegrotesk-light-webfont.otf') format('opentype'),
+         url('/fonts/spacegrotesk-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -26,8 +26,8 @@
 
 @font-face {
     font-family: 'space_groteskmedium';
-    src: url('./fonts/spacegrotesk-medium-webfont.otf') format('opentype'),
-         url('./fonts/spacegrotesk-medium-webfont.woff') format('woff');
+    src: url('/fonts/spacegrotesk-medium-webfont.otf') format('opentype'),
+         url('/fonts/spacegrotesk-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -35,8 +35,8 @@
 
 @font-face {
     font-family: 'space_groteskregular';
-    src: url('./fonts/spacegrotesk-regular-webfont.otf') format('opentype'),
-         url('./fonts/spacegrotesk-regular-webfont.woff') format('woff');
+    src: url('/fonts/spacegrotesk-regular-webfont.otf') format('opentype'),
+         url('/fonts/spacegrotesk-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -44,8 +44,8 @@
 
 @font-face {
     font-family: 'space_grotesksemibold';
-    src: url('./fonts/spacegrotesk-semibold-webfont.otf') format('opentype'),
-         url('./fonts/spacegrotesk-semibold-webfont.woff') format('woff');
+    src: url('/fonts/spacegrotesk-semibold-webfont.otf') format('opentype'),
+         url('/fonts/spacegrotesk-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
