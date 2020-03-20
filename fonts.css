@@ -16,9 +16,9 @@
 
 @font-face {
     font-family: 'space_groteskbold';
-    src: url("../fonts/spacegrotesk-bold-webfont.otf") format("opentype"),
-         url("../fonts/spacegrotesk-bold-webfont.woff") format("woff"),
-         url("../fonts/spacegrotesk-bold-webfont.woff") format("woff");
+    src: url("./fonts/spacegrotesk-bold-webfont.otf") format("opentype"),
+         url("./fonts/spacegrotesk-bold-webfont.woff") format("woff"),
+         url("./fonts/spacegrotesk-bold-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 
