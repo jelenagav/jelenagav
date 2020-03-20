@@ -57,20 +57,20 @@ mainNavLinks.forEach(link => {
 });
 
 // change color s1
-// $(document).ready(function(){
-//     var scroll_pos = 0;
-//     $(document).scroll(function() {
-//         scroll_pos = $(this).scrollTop();
-//         if(scroll_pos > 250) {
-//             $("section").addClass("changeColor");
-//             $("section:nth-child(1) h2, section:nth-child(1) p").addClass("changeColortext");
-//             $("section:nth-child(2) h2").addClass("changeColortitle");
+$(document).ready(function(){
+    var scroll_pos = 0;
+    $(document).scroll(function() {
+        scroll_pos = $(this).scrollTop();
+        if(scroll_pos > 300) {
+            $("header").addClass("changeColor");
+            // $("section:nth-child(1) h2, section:nth-child(1) p").addClass("changeColortext");
+            // $("section:nth-child(2) h2").addClass("changeColortitle");
 
-//         }
-//         else {
-//             $("section").removeClass("changeColor");
-//             $("section:nth-child(1) h2, section:nth-child(1) p").removeClass("changeColortext");
-//             $("section:nth-child(2) h2, hr").removeClass("changeColortitle");
-//         }
-//     });
-// });
+        }
+        else {
+            $("header").removeClass("changeColor");
+            // $("section:nth-child(1) h2, section:nth-child(1) p").removeClass("changeColortext");
+            // $("section:nth-child(2) h2, hr").removeClass("changeColortitle");
+        }
+    });
+});
