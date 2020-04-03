@@ -6,7 +6,7 @@
 header {
   height: 95vh;
   position: relative;
-  background-color: #578FB0!important;
+  background-color: #eaf3ef!important;
 /*  background-color: #4279b3!important;
 */padding: 1%;
 /*  margin: 1.5%;
@@ -39,13 +39,13 @@ header {
   font-family: space_groteskbold;
   font-size: 0.9rem;
   font-weight: 400;
-  color: #FEFDF1;
+  color: #1b1a1a;
 /*  color: #333;
 */text-decoration: none;
 }
 
 .nav__item:hover .nav__link {
-  color: #D6D200;
+  color: #64baa1;
 }
 
 .nav__logo, .nav__logo p {
@@ -54,7 +54,7 @@ header {
   letter-spacing: 0.8px;
   float: left;
   margin: 0% 2%;
-  color: #FEFDF1;
+  color: #64baa1;
 /*  white-space: nowrap;
   overflow: hidden;*/
 }
@@ -70,13 +70,13 @@ header {
 .heading h1 {
     white-space: nowrap;
     overflow: hidden;
-    color: #FEFDF1;
+    color: #1b1a1a;
 }
 
 
 .heading p {
  font-family: "space_groteskbold";
- color: #FEFDF1;
+ color: #1b1a1a;
  line-height: 1.4;
  font-size: 1.15rem;
  letter-spacing: -1px;
@@ -93,7 +93,7 @@ header {
   transform: translate(-50%, 0%);
   color: #fefdf1;
 /*  -webkit-animation: bounce 1.25s 1.8s infinite;
-  animation: bounce 1.25s 1.8s infinite;*/
+  animation: 75b797bounce 1.25s 1.8s infinite;*/
 }
 
 @media (min-width: 576px) {
@@ -143,7 +143,7 @@ header {
 
   .nav__logo p {
     font-size: 1.3rem;
-    color: #FEFDF1;
+    color: #64baa1;
   }
 
   .heading .span--appear {
@@ -334,10 +334,25 @@ header {
 }
 
 .portfolio a {
-  color: #D6D200;
+  color: #404141;
 }
 
-.portfolio h3 {
+
+.portfolio a {
+  padding-bottom: 4px;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  color: #282929;
+  text-decoration: none;
+}
+
+.portfolio a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23282929' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
 }
 
 .col-lg-7, .col-md-7, .col-sm-7 {
@@ -386,7 +401,7 @@ header {
   width: 100%;
   position: relative;
   height: auto;
-  background: #f1f3f2;
+  background: #eef3f2;
   text-align: center;
   -webkit-transition: all 0.8s ease;
   -o-transition: all 0.8s ease;
@@ -483,10 +498,10 @@ color: #5d5d5d;
     transition: 1s ease;
     }
 
-  a:hover {
+/*  a:hover {
     font-family: space_groteskbold;
     transition: 1s ease;
-  }
+  }*/
 }
 
 @media (min-width: 992px) {
@@ -496,7 +511,7 @@ color: #5d5d5d;
   }
 
   .c-card h3 {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     padding-bottom: 16px;
     letter-spacing: 1.5px;
   }
@@ -543,13 +558,13 @@ footer ul {
 }
 
 .footer a {
-  color: #434343!important;
+  color: #1b1a1a!important;
   -webkit-transition: all 0.1s linear!important;
   -o-transition: all 0.1s ease!important;
 }
 
 .footer a:hover  {
-  color:#D6D200!important;
+  color:#64baa1!important;
   -webkit-transition: all 0.1s linear!important;
   -o-transition: all 0.1s linear!important;
 }
@@ -563,14 +578,13 @@ footer ul {
 }
 
 .contact__item {
-  background-color: #578FB0!important;
+  background-color: #64baa1!important;
 /*  background-color: #3482D3;
 */max-width: 100%!important;
   padding: 0%!important;
 }
 
 .contact__text p {
-  color: #ffffff;
   font-size: 1.1rem;
   padding-right: 0%;
   padding-left: 0%;
@@ -591,11 +605,25 @@ footer ul {
 }
 
 .contact__text a {
-  color: #ffffff;
+  padding-bottom: 4px;
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  color: #282929;
+  text-decoration: none;
+}
+
+.contact__text a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23282929' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
 }
 
 .footer {
-  background-color: #3482D3;
+  background-color: #64baa1;
   margin-bottom: 0!important;
   padding: 0% 0% 2% 0%;
 }
@@ -607,13 +635,13 @@ footer ul {
     margin-bottom: auto;
 }
   .contact__item h3 {
-    color: #ffffff;
+    color: #282929;
     padding-left: 1.8rem;
     margin: -5px auto -5px 0;
   }
 
   .contact__text p {
-    color: #ffffff;
+    color: #282929;
     font-size: 1.1rem;
     padding: 0%;
     margin: 0% 5% 0% 3%;

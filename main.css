@@ -49,13 +49,14 @@ padding-bottom: 8%;
   padding-top: 3%;
 }
 
+
 .span--green {
-  color: #D6D200;
+  color: #75b797;
+  margin-left: 1px;
 }
 
-.span--blue {
-  color: #578FB0;
-  margin-left: 1px;
+.span--light {
+  color: #cbfbe6;
 }
 
 .span--bold {
@@ -112,7 +113,7 @@ h2 {
 
 h3 {
   font-family: 'space_groteskbold';
-  color: #434343;
+  color: #1b1a1a;
   line-height: 1;
 }
 
