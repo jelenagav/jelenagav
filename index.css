@@ -8,10 +8,15 @@ header {
   position: relative;
   background-color: #578FB0!important;
 /*  background-color: #4279b3!important;
-*/  padding: 1%;
+*/padding: 1%;
 /*  margin: 1.5%;
 *//*  position: fixed;
 */}
+
+.originalres {
+   height: 95vh!important;
+   transition-duration: 10s; 
+}
 
 .nav {
   text-align:right;

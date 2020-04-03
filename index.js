@@ -56,21 +56,19 @@ mainNavLinks.forEach(link => {
   });
 });
 
-// change color s1
+// change color 
 $(document).ready(function(){
     var scroll_pos = 0;
     $(document).scroll(function() {
         scroll_pos = $(this).scrollTop();
         if(scroll_pos > 300) {
             $("header").addClass("changeColor");
-            // $("section:nth-child(1) h2, section:nth-child(1) p").addClass("changeColortext");
-            // $("section:nth-child(2) h2").addClass("changeColortitle");
-
+            $("header").addClass("changeRes");
         }
         else {
             $("header").removeClass("changeColor");
-            // $("section:nth-child(1) h2, section:nth-child(1) p").removeClass("changeColortext");
-            // $("section:nth-child(2) h2, hr").removeClass("changeColortitle");
+            $("header").addClass("originalColor");
+            $("header").removeClass("changeRes");
         }
     });
 });

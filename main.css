@@ -86,6 +86,10 @@ padding-bottom: 8%;
   .changeColor {
   background-color: white!important;
   }
+  .changeRes {
+  height: 60vh;
+  transition-duration: 2s;
+  }
 }
 /* ==================================================
    Typography
