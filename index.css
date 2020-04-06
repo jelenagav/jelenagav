@@ -397,6 +397,11 @@ header {
   padding-top: 3%;
 }
 
+.c-card__text--left {
+  padding-left: 2%;
+  padding-top: 3%;
+}
+
 .c-card__link {
   width: 100%;
   position: relative;
@@ -595,7 +600,7 @@ footer ul {
 }
 
 .contact__item h3 {
-  color: #ffffff;
+  color: #282929;
   padding-left: 0rem;
   padding-bottom: 0%;
   margin-left: auto;
@@ -623,7 +628,7 @@ footer ul {
 }
 
 .footer {
-  background-color: #64baa1;
+  background-color: #99cab2;
   margin-bottom: 0!important;
   padding: 0% 0% 2% 0%;
 }
