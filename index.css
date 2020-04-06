@@ -6,7 +6,7 @@
 header {
   height: 95vh;
   position: relative;
-  background-color: #eaf3ef!important;
+  background-color: #e8f3ee!important;
 /*  background-color: #4279b3!important;
 */padding: 1%;
 /*  margin: 1.5%;
@@ -578,7 +578,7 @@ footer ul {
 }
 
 .contact__item {
-  background-color: #64baa1!important;
+  background-color: #99cab2!important;
 /*  background-color: #3482D3;
 */max-width: 100%!important;
   padding: 0%!important;
