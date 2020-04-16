@@ -36,9 +36,8 @@ header {
 }
 
 .nav__link {
-  font-family: space_groteskbold;
+  font-family: space_groteskmedium;
   font-size: 0.9rem;
-  font-weight: 400;
   color: #1b1a1a;
 /*  color: #333;
 */text-decoration: none;
@@ -103,7 +102,7 @@ header {
 
   .heading h1 {
     font-size: 5rem;
-    animation: revealText 1000ms cubic-bezier(0.74, 0.09, 0.15, 0.99) 1.2s both;
+    animation: revealText 1000ms cubic-bezier(0.74, 0.09, 0.15, 0.99) 0s both;
     transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
     will-change: opacity, transform;
   }
@@ -117,7 +116,7 @@ header {
   }
 
   .heading__sub p {
-    font-size: 1.5rem;
+    font-size: 1.5rem!;
     text-align: center;
     letter-spacing: normal;
     transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
