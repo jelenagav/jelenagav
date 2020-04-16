@@ -103,8 +103,12 @@ header {
 
   .heading h1 {
     font-size: 5rem;
+    animation: revealText 1000ms cubic-bezier(0.74, 0.09, 0.15, 0.99) 1.2s both;
+    transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+    will-change: opacity, transform;
   }
-  .heading__sub {
+
+  .heading__animation, .heading__sub {
     overflow: hidden;
   }
 
@@ -121,11 +125,11 @@ header {
     }
 
   .heading__sub-one p {
-   animation: revealText 1000ms cubic-bezier(0.7, 0, 0.3, 1) 1.2s forwards;
+   animation: revealText 1000ms cubic-bezier(0.74, 0.09, 0.15, 0.99) 1.7s forwards;
   }
 
   .heading__sub-two p {
-   animation: revealText 1000ms cubic-bezier(0.7, 0, 0.3, 1) 1.5s forwards!important;
+   animation: revealText 1000ms cubic-bezier(0.74, 0.09, 0.15, 0.99) 1.7s forwards!important;
   }
 
   .nav {
