@@ -304,6 +304,7 @@ header {
 ================================================== */
 .portfolio {
   z-index: -2;
+  background: transparent; /*firefox*/
 }
 
 .portfolio a {
@@ -373,6 +374,7 @@ header {
   text-align: center;
   -webkit-transition: all 0.8s ease;
   -o-transition: all 0.8s ease;
+  z-index: -1;/*firefox*/
 }
 
 .c-card__text--span {
