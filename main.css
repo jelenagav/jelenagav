@@ -265,8 +265,8 @@ font-family: 'basiercircle_regular';
      margin-left: 0%;
      opacity: 0;
    }
-
-    [data-aos="expand"].aos-animate {
+/*.contact .container
+*/   [data-aos="expand"].aos-animate {
         margin-left: 13%;
         opacity: 1;
   }
@@ -274,16 +274,16 @@ font-family: 'basiercircle_regular';
    [data-aos="expandtest"] {
      margin-right: 13%;
    }
-
-    [data-aos="expandtest"].aos-animate {
+/*section .contact
+*/    [data-aos="expandtest"].aos-animate {
         margin-right: 0%;
   }
 
-    [data-aos="testthree"] {
+    [data-aos="expandPadding"] {
     padding: 9% 0%;
      }
 
-    [data-aos="testthree"].aos-animate {
+    [data-aos="expandPadding"].aos-animate {
     padding: 10% 0%;
   }
 
