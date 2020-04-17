@@ -28,7 +28,7 @@
 }
 
 .nav__item:hover .nav__link {
-  color: #64baa1;
+  color: #75b797;
 }
 
 .nav__logo, .nav__logo p {
@@ -43,9 +43,9 @@
 header {
   height: 95vh;
   position: relative;
-  background-color: #e8f3ee!important;
+  background-color: #F1F7F4!important;
   padding: 1%;
-  margin-bottom: 5%!important;
+  margin-bottom: 5%;
 }
 
 .heading {
@@ -57,7 +57,6 @@ header {
 }
 
 .heading h1 {
-  font-size: 4.3rem;
   white-space: nowrap;
   overflow: hidden;
   color: #1b1a1a;
@@ -67,16 +66,18 @@ header {
 .heading p {
   font-family: "basiercircle_medium";
   color: #1b1a1a;
-  line-height: 1.4;
-  font-size: 1.02rem;
-  text-align: center!important;
-  text-align: justify;
+  line-height: 1.1;
+  font-size: 1.1rem;
   margin-bottom: -3px;
+  text-align: center!important;
 }
 
+.heading__sub {
+  display: none;
+}
 
 @media (min-width: 576px) {
-   header {
+  header {
     height: 100vh;
   }
 
@@ -89,27 +90,28 @@ header {
 
   .heading p {
     font-size: 1.25rem;
-    line-height: 1.4;
     margin-bottom: -2px;
   }
 
   .heading__animation, .heading__sub {
     overflow: hidden;
   }
-
-
+  .heading__sub {
+    display: inline-block;
+  }
 
   .heading__sub p {
+    display: inline-block;
     transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
     will-change: opacity, transform;
     }
 
   .heading__sub-one p {
-   animation: revealText 1000ms cubic-bezier(0.74, 0.09, 0.15, 0.99) 1.7s forwards;
+   animation: revealText 1000ms cubic-bezier(0.74, 0.09, 0.15, 0.99) 1.3s forwards;
   }
 
   .heading__sub-two p {
-   animation: revealText 1000ms cubic-bezier(0.74, 0.09, 0.15, 0.99) 1.9s forwards;
+   animation: revealText 1000ms cubic-bezier(0.74, 0.09, 0.15, 0.99) 1.5s forwards;
   }
 
   .nav {
@@ -131,8 +133,8 @@ header {
   }
 
   .heading .span--appear {
-    animation: fadeIn 0.5s linear 1.4s both;
-    -webkit-animation: fadeIn 0.5s linear 1.4s both;
+    animation: fadeIn 0.5s linear 1s both;
+    -webkit-animation: fadeIn 0.5s linear 1s both;
     display: inline-block;
   }
 
@@ -143,11 +145,15 @@ header {
   .zoom-out {
     animation: ZoomOut cubic-bezier(.65,.02,.23,1) 1.5s both;
     }
+
+  .mobile__temp-fix {
+  display: none;
+  }
 }
 
 @media (min-width: 768px) {
   header {
-    margin-bottom: 8%!important;
+    margin-bottom: 3rem;
   }
 
   header h2 {
@@ -160,6 +166,10 @@ header {
 }
 
 @media (min-width: 992px) {
+  header {
+    margin-bottom: 3rem;
+  }
+
   .heading h1 {
     font-size: 5.5rem;
   }
@@ -184,6 +194,10 @@ header {
 }
 
 @media (min-width: 1200px) {
+  header {
+    margin-bottom: 4rem ;
+  }
+
   .heading h1 {
     font-size: 6.5rem;
   }
@@ -194,6 +208,11 @@ header {
     }
 }
 
+@media (min-width: 1400px) {
+  header {
+    margin-bottom: 0rem ;
+  }
+}
 
 /* ==================================================
    Section 2
@@ -210,15 +229,7 @@ header {
   opacity: 0.9;
 }
 
-.portfolio__intro-text br {
-  display: none;
-}
-
-
 @media (min-width: 576px) {
-  .intro__text {
-/*    word-spacing: -2px;
-*/  }
 
   .intro__text h4 {
    font-size: 1.05rem;
@@ -240,12 +251,9 @@ header {
   }
 
   .intro__text h2 {
-    max-width: 90%
-    font-size: 2.6rem!;
     margin: auto;
-    letter-spacing: 2px;
     line-height: 1.1;
-    padding: 0% 0 11% 0%;
+    padding: 0 0 3rem 0;
     /* margin: 37px!important; */
   }
 
@@ -254,7 +262,7 @@ header {
     padding-right: 5px!important;
   }
 
-  .intro__text > p, .intro__text > h2, .intro__text > h4 {
+  .intro__text p, .intro__text h2, .intro__text h4 {
     max-width: 88%;
     margin: auto;
 /*    animation: fadeIn 0.3s linear 1.4s both;
@@ -270,9 +278,7 @@ header {
 }
 
 @media (min-width: 900px){
-  .portfolio__intro-text br {
-    display: inline-block;
-}
+
 }
 @media (min-width: 992px) {
   .intro__img > img {
@@ -287,7 +293,7 @@ header {
 @media (min-width: 1200px) {
   .intro__text {
     padding: 5%;
-    max-width: 80%;
+    max-width: 85%;
   }
 }
 
@@ -411,24 +417,29 @@ color: #5d5d5d;
 }
 
 @media (min-width: 768px) {
-  .c-card {
-    padding: 15% 0%;
+  .portfolio .container {
+    max-width: 86%!important;
   }
 
    .portfolio__item > div:nth-child(3) {
     padding: 15% 0% 0% 0%;
   }
 
-  .c-card:first-child {
-    padding: 5% 0% 15% 0%!important;
-  }
-
   .portfolio h2 {
     padding-bottom: 1rem;
+    padding: 0 0 2.2rem 0;
   }
 
   .portfolio h4 {
     margin-bottom: -30px;
+  }
+
+  .c-card {
+    padding: 15% 0%;
+  }
+
+  .c-card:first-child {
+    padding: 5% 0% 15% 0%!important;
   }
 
   .c-card h3 {
@@ -545,7 +556,7 @@ color: #5d5d5d;
 }
 
 .contact__text p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding-right: 0%;
   padding-left: 0%;
   padding-top: 5%;
