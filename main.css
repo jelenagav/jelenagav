@@ -15,14 +15,8 @@ body {
   font-size: 16px;
   background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 100%;
-}
-
-@media (min-width: 576px) {
-   body {
-  padding: 0;
-  }
+/*  -moz-osx-font-smoothing: grayscale;
+*/  height: 100%;
 }
 
 .container {
@@ -48,7 +42,6 @@ section, header {
   padding-top: 3%;
 }
 
-
 .span--green {
   color: #75b797;
   margin-left: 1px;
@@ -60,14 +53,6 @@ section, header {
 
 .span--bold {
   font-family: "basiercircle_medium"!important;
-/*  font-family: "space_groteskmedium"!important;
-*/}
-
-
-@media (max-width: 575.98px) {
-  .row {
-    padding: 5%;
-  }
 }
 
 * {
@@ -85,20 +70,27 @@ section, header {
   }
 }
 
-@media (min-width: 768px) {
-
-  .sm-hidden {
-    display: none;
+@media (max-width: 575.98px) {
+  .row {
+    padding: 5%;
   }
+}
+
+@media (min-width: 576px) {
+   body {
+  padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
 
   .container {
     max-width: 90%!important;
   }
 
-  section, header {
+  section {
     margin-bottom: 10%;
-  /*  padding: 0% 2%;
-  */}
+  }
 }
 
 @media (min-width: 992px) {
@@ -109,23 +101,20 @@ section, header {
   height: 50vh;
   transition-duration: 1.5s;
   }
-
-  .sm-hidden {
-    display: inline-block;
-  }
 }
+
 /* ==================================================
    Typography
 ================================================== */
 
+
 h1 {
   font-family: "space_groteskbold";
-  font-size: 3.7rem;
+  font-size: 4.2rem;
   line-height: 1.1;
-  letter-spacing:0.05rem;
-  color: #333;
+  letter-spacing: 0.05rem;
+  color: red;
 }
-
 
 h2 {
   font-family: "space_groteskbold";
