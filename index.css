@@ -123,6 +123,10 @@ header {
     margin-top: -2px;
   }
 
+  _::-webkit-full-page-media, _:future, :root .safari_only {
+    margin-top: 0px;
+  }
+
   .heading__sub--one p {
    animation: revealText 1000ms cubic-bezier(0.74, 0.09, 0.15, 0.99) 1.3s forwards;
   }
@@ -225,7 +229,7 @@ header {
   }
 
   .heading p {
-    font-size: 1.5rem;
+    font-size: 1.54rem;
     max-width: 522px;
     }
 }
