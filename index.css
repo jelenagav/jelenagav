@@ -40,6 +40,17 @@
   color: #64baa1;
 }
 
+.fulljustify {
+text-align: justify;
+text-align-last: justify;
+}
+
+.fulljustify:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
 header {
   height: 95vh;
   position: relative;
@@ -54,6 +65,7 @@ header {
   left: 50%;
   transform: translate(-50%,-50%);
   margin: 0;
+  max-width: 443px;
 }
 
 .heading h1 {
@@ -69,7 +81,8 @@ header {
   line-height: 1.1;
   font-size: 1.1rem;
   margin-bottom: -3px;
-  text-align: center!important;
+/*  text-align: center!important;
+*/  min-width: 450px!important;
 }
 
 .heading__sub {
@@ -98,6 +111,7 @@ header {
   }
   .heading__sub {
     display: inline-block;
+    margin-left: 4px;
   }
 
   .heading__sub p {
@@ -105,12 +119,16 @@ header {
     transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
     will-change: opacity, transform;
     }
+  .heading__sub--two {
+    margin-top: -2px;
+  }
 
-  .heading__sub-one p {
+  .heading__sub--one p {
    animation: revealText 1000ms cubic-bezier(0.74, 0.09, 0.15, 0.99) 1.3s forwards;
   }
 
-  .heading__sub-two p {
+  .heading__sub--two p {
+   letter-spacing: 0.25px;
    animation: revealText 1000ms cubic-bezier(0.74, 0.09, 0.15, 0.99) 1.5s forwards;
   }
 
@@ -196,6 +214,10 @@ header {
 @media (min-width: 1200px) {
   header {
     margin-bottom: 4rem ;
+  }
+
+  .heading {
+    max-width: 520px;
   }
 
   .heading h1 {
