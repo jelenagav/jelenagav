@@ -43,13 +43,14 @@ section {
 }
 
 .span--green {
-  color: #75b797;
-  margin-left: 1px;
+  color: #64baa1;
+/*  color: #6aad9f;
+*/margin-left: 1px;
 }
 
 .span--light {
-  color: #e1f3ec;
-}
+/*  color: #6BB3AA;
+*/}
 
 .span--bold {
   font-family: "basiercircle_medium"!important;
