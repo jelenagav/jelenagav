@@ -40,10 +40,8 @@
 }
 
 .nav__item:hover .nav__link {
-/*  color: #75b797;
-*/
   color:#54ad9b;
-  }
+}
 
 .nav__logo, .nav__logo p {
   font-family: space_groteskbold;
@@ -324,12 +322,11 @@ header {
   .intro__img > img {
     max-width: 90%;
     }
-  }
 
   .intro {
     padding-top: 0%;
   }
-
+}
 @media (min-width: 1200px) {
   .intro__text {
     padding: 5%;
@@ -360,7 +357,7 @@ header {
   .intro__text {
     padding: 5% 7%;
   }
-
+}
 /* ==================================================
    Section 3
 ================================================== */
@@ -608,6 +605,12 @@ color: #5d5d5d;
   max-width: 100%!important;
 }
 
+@media (max-width: 575.98px) {
+  .contact__item--title .heading__sub {
+    display: none;
+  }
+}
+
 .contact__item .row{
   padding: 7% 0 0% 0%;
 }
@@ -622,17 +625,19 @@ color: #5d5d5d;
   font-size: 1rem;
   padding-right: 0%;
   padding-left: 0%;
-  padding-top: 5%;
+  padding-top: 2%;
   margin-left: auto;
   margin-right: auto;
   max-width: 77%;
+}
+.contact__item--title {
+  max-width: 82%;
+  margin: auto;
 }
 
 .contact__item h2 {
   color: #282929;
   padding: 2px 0px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: -0.5%;
   max-width: 81%;
 }
@@ -676,7 +681,7 @@ footer ul {
 }
 
 .footer a:hover  {
-  color:#66b5aa!important;
+  color: #66b5aa!important;
 }
 
 @media (min-width: 768px) {

@@ -48,12 +48,14 @@ section {
 */margin-left: 1px;
 }
 
-.span--light {
-/*  color: #6BB3AA;
-*/}
-
 .span--bold {
   font-family: "basiercircle_medium"!important;
+}
+
+@media (max-width: 575.98px) {
+  .span--bold {
+    font-size: 17px;
+  }
 }
 
 * {
@@ -163,7 +165,7 @@ font-family: 'basiercircle_regular';
   }
 
   h2 {
-    font-size: 2.6rem!;
+    font-size: 2.4rem;
   }
 
   h3 {
@@ -189,7 +191,6 @@ font-family: 'basiercircle_regular';
 
 @media (min-width: 992px) {
   h2 {
-    font-size: 2.6rem;
   }
 }
 /*a, a:link, a:active, a:visited {
@@ -220,6 +221,7 @@ transform: none !important;
 -ms-animation: none !important;
 animation: none !important;
 }
+
 @media (min-width: 768px) {
     [data-aos="fadeUp"].aos-animate {
       transform: translateY(0px);
