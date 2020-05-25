@@ -88,7 +88,7 @@ section {
 @media (min-width: 768px) {
 
   .container {
-    max-width: 90%!important;
+    max-width: 90%;
   }
 
   section {
@@ -104,8 +104,17 @@ section {
   height: 50vh;
   transition-duration: 1.5s;
   }
+
+  .container {
+    width: 90%;
+  }
 }
 
+@media (min-width: 1400px) {
+  .container {
+    width: 80%;
+  }
+}
 /* ==================================================
    Typography
 ================================================== */
@@ -325,6 +334,17 @@ animation: none !important;
   }
 
 }
+
+@media (min-width: 992px) {
+    [data-aos="expandPadding"] {
+    padding: 5% 0%;
+     }
+
+    [data-aos="expandPadding"].aos-animate {
+    padding: 12% 0%;
+  }
+}
+
 
 @-webkit-keyframes bounce {
      0% {

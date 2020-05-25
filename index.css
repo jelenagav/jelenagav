@@ -329,7 +329,7 @@ header {
 }
 @media (min-width: 1200px) {
   .intro__text {
-    padding: 5%;
+    padding: 5% 2%;
     max-width: 85%;
   }
 }
@@ -337,7 +337,7 @@ header {
 @media (min-width: 1300px) {
 .intro__img > img {
   max-width: 80%!important;
-  padding: 205px 30px 30px 30px;
+  padding: 130px 30px 30px 30px;
   vertical-align: middle;
   }
 }
@@ -351,11 +351,11 @@ header {
 
 @media (min-width: 1600px) {
   .intro__img > img {
-  max-width: 65%!important;
+  max-width: 73%!important;
   }
 
   .intro__text {
-    padding: 5% 7%;
+    padding: 5% 6%;
   }
 }
 /* ==================================================
@@ -477,7 +477,7 @@ color: #5d5d5d;
 
 @media (min-width: 768px) {
   .portfolio .container {
-    max-width: 86%!important;
+    max-width: 86%;
   }
 
    .portfolio__item > div:nth-child(3) {
@@ -601,8 +601,8 @@ color: #5d5d5d;
   word-spacing: 2px;
 }
 
-.contact .container {
-  max-width: 100%!important;
+.contact > .container {
+  width: 100%!important;
 }
 
 @media (max-width: 575.98px) {
