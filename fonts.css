@@ -21,6 +21,16 @@
 }
 
 @font-face {
+    font-family: 'basier_circleregular_italic';
+    src: url("./fonts/basiercircle-regularitalic-webfont.woff2") format('woff2'),
+         url("./fonts/basiercircle-regularitalic-webfont.woff") format('woff'),
+         url("./fonts/basiercircle-regularitalic-webfont.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
   font-family: 'Space_Grotesk';
   font-weight: bold;
   src: url("./fonts/SpaceGrotesk-B.otf") format("opentype"),

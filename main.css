@@ -52,6 +52,10 @@ section {
   font-family: "basiercircle_medium"!important;
 }
 
+.span--italic {
+  font-family: "basier_circleregular_italic"!important;
+}
+
 @media (max-width: 575.98px) {
   .span--bold {
     font-size: 17px;

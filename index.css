@@ -89,7 +89,7 @@ header {
 
 
 .heading p {
-  font-family: "basiercircle_medium";
+  font-family: "basiercircle_regular";
   color: #1b1a1a;
   line-height: 1.1;
   font-size: 1.1rem;
@@ -312,7 +312,7 @@ header {
     text-align: left;
   }
   .intro__img > img {
-    padding: 50px 15px 15px 15px;
+    padding: 80px 15px 15px 15px;
     max-width: 100%;
   }
 }
