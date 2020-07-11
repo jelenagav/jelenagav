@@ -56,19 +56,17 @@ mainNavLinks.forEach(link => {
   });
 });
 
-// change color 
+// change color
 $(document).ready(function(){
     var scroll_pos = 0;
     $(document).scroll(function() {
         scroll_pos = $(this).scrollTop();
         if(scroll_pos > 300) {
             $("header").addClass("changeColor");
-            $("header").addClass("changeRes");
         }
         else {
             $("header").removeClass("changeColor");
             $("header").addClass("originalColor");
-            $("header").removeClass("changeRes");
         }
     });
 });
