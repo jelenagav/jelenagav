@@ -57,6 +57,9 @@ section {
   font-family: "sofiapro-italic"!important;
 }
 
+.span--xs {
+  font-size: 15px;
+}
 @media (max-width: 575.98px) {
   .span--bold {
     font-size: 17px;
@@ -129,6 +132,7 @@ h1 {
   line-height: 1.1;
   letter-spacing: 0.05rem;
   padding-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -199,8 +203,15 @@ p {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1400px) {
   h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  h2 {
+    font-size: 2.7rem;
   }
 }
 
