@@ -66,7 +66,7 @@
 header {
   height: 100vh;
   position: relative;
-  background-color: #d2ece1;
+  background-color: #d6f3e6;
   padding: 1%;
   margin-bottom: 5%;
 }
@@ -128,6 +128,7 @@ header {
     transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
     will-change: opacity, transform;
     }
+
   .heading__sub--two {
     margin-top: -2px;
   }
@@ -357,7 +358,6 @@ header {
    Section 3
 ================================================== */
 
-
 .contact__item {
   background-color: #c0e8e0!important;
   padding: 0%!important;
@@ -374,7 +374,7 @@ header {
 }
 
 .contact  .container {
-  max-width: 100%!important;
+  max-width: 100%;
 }
 
 @media (max-width: 575.98px) {
@@ -399,7 +399,7 @@ header {
   padding-top: 2%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 77%;
+  max-width: 87%;
 }
 .contact__item--title {
   max-width: 82%;
@@ -503,6 +503,12 @@ footer ul {
     margin-left: 8%;
   }
 
+  .contact__text p {
+    font-size: 1.2rem;
+    padding-right: 6%;
+    padding-left: 2%;
+  }
+
   .footer {
     background-color: #ffffff;
   }
@@ -528,6 +534,18 @@ footer ul {
     margin: 0 2% 0 6%;
   }
 
+}
+
+@media (min-width: 992px) {
+  .contact__text p {
+    font-size: 1.2rem;
+    padding-right: 10%;
+    padding-left: 2%;
+  }
+
+  .footer {
+    padding: 3% 0%;
+  }
 }
 
 @media (min-width: 1650px) {
@@ -724,7 +742,7 @@ footer ul {
     transform: scale(1.01);
     transition: 1s ease;
   }
-
+}
 
 @media (min-width: 992px) {
   .c-card p {
@@ -776,4 +794,6 @@ footer ul {
     padding: 13% 10% 14% 23%;
   }
 }
+
+
 
